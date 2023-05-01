@@ -1,0 +1,124 @@
+::selection {
+  background-color: #dcdfbe;
+  color: #454039;
+}
+
+.hermes_brand {
+  color: #454039;
+  background-color: #dcdfbe;
+}
+
+.homepage-title {
+  text-align: center;
+  color: #dcdfbe;
+  padding: 3rem 0;
+  font-size: 50px;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 0px 20px;
+}
+
+.section1 .hermes_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-header {
+    position: sticky;
+    top: 0;
+  }
+  .section1 {
+    grid-template-columns: 1fr;
+  }
+  .section1 .hermes_image {
+    width: 50vw;
+    display: flex;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* .page-header {
+    position: sticky;
+    top: 0;
+  } */
+
+  .hermes_homepage_content article {
+    /* margin: 0px 30px 30px 30px; */
+  }
+
+  .section1 {
+    grid-template-columns: 1fr;
+  }
+
+  .section1 div {
+    padding: 0px !important;
+  }
+
+  .section1 {
+    padding: 0px;
+  }
+
+  .section1 .hermes_image {
+    width: 80vw;
+    display: flex;
+    margin: 30px auto;
+  }
+
+  .section1 div {
+    padding: 20px;
+  }
+
+  .section1 .hermes_image {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+  }
+}
+
+.section1 .hermes_image img {
+  width: 100%;
+  border-radius: 40px;
+}
+
+.section1 .hermes_image img:hover {
+  box-shadow: 0px 0px 30px yellow;
+  transition: all 0.5s ease-in;
+}
+
+.home-background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #484643;
+  z-index: -3;
+}
+
+.home-background::before {
+  position: absolute;
+  top: 0.1rem;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #454039;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  z-index: -1;
+}
+.hermes_homepage_content {
+  font-size: 18px;
+  color: #dcdfbe;
+}
+
+.hermes_homepage_content article {
+  margin-bottom: 30px;
+  /* padding: 0px 20px 30px 20px; */
+  /* padding: 0px 20px; */
+}
