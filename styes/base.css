@@ -18,8 +18,15 @@
   margin-left: 5px;
 }
 
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
 .logo img {
   border-radius: 50%;
+  margin-right: 5px;
+  font-weight: 900;
 }
 
 .nav-items {
@@ -55,7 +62,12 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+.logo-text {
+  color: #dcdfbe;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 548px) {
   .nav-items {
     flex-direction: column;
     width: 100%;
