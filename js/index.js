@@ -11,6 +11,11 @@ document.querySelector(".hamburger-menu")?.addEventListener("click", e => {
     toggleNavbarVisibility();
 })
 
+document.addEventListener("click", e => {
+    if (!e.target.parentElement?.classList.contains('nav-item') && !e.target.parentElement?.classList.contains('hamburger-menu')) {
+        hideNavbar();
+    }
+})
 
 let clearActiveNavItems = function () {
     document.querySelectorAll(".nav-item a")?.forEach(a => {
