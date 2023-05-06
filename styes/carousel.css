@@ -1,0 +1,8 @@
+.my-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  min-height: 350px;
+  text-align: justify;
+}

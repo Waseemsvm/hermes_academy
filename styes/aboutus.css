@@ -1,0 +1,9 @@
+.aboutus ul li {
+  /* list-style-type: none; */
+  margin: 1.2rem;
+}
+
+.aboutus {
+  text-align: justify;
+  margin: 0 5%;
+}

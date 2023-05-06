@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #37342f;
+}
+
+.navbar-brand {
+  color: #dcdfbe !important;
+}
+
+.navbar .nav-link {
+  color: #dcdfbe;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover,
+button[data-bs-toggle="collapse"] {
+  background-color: #dcdfbe;
+  color: #37342f;
+}
+
+a.nav-link {
+  padding: 0.6rem 2rem;
+}
+
+.page-header {
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+}
