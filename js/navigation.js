@@ -8,13 +8,13 @@
 let fnConfigureNavLinks = function () {
     document.querySelectorAll(".nav-link")?.forEach(a => {
         a.addEventListener("click", e => {
-            e.preventDefault();
+            // e.preventDefault();
             fnClearHighlight();
             fnCloseMenu();
-            scrollTo({
-                top: document.querySelector(e.target?.getAttribute('href')).getBoundingClientRect().top - 100,
-                behavior: "smooth"
-            })
+            // scrollTo({
+            //     top: document.querySelector(e.target?.getAttribute('href')).getBoundingClientRect().top - 100,
+            //     behavior: "smooth"
+            // })
             e.target?.classList.add('active');
 
         })
