@@ -12,7 +12,7 @@ let fnConfigureNavLinks = function () {
             fnClearHighlight();
             fnCloseMenu();
             scrollTo({
-                top: document.querySelector(e.target?.getAttribute('href')).getBoundingClientRect().top - 200,
+                top: document.querySelector(e.target?.getAttribute('href')).getBoundingClientRect().top - 100,
                 behavior: "smooth"
             })
             e.target?.classList.add('active');
